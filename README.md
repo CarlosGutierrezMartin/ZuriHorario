@@ -52,6 +52,10 @@ Referencia: [Importar eventos a Google Calendar](https://support.google.com/cale
 
 ### Exportación directa desde el iPhone
 
+**La instancia publicada ya está configurada**: proyecto Google Cloud `zurihorario`, Calendar API habilitada, cliente web con origen `https://carlosgutierrezmartin.github.io` y OAuth en producción. Solo falta que la usuaria conecte su propia cuenta desde Configuración y elija el calendario de destino. Google puede mostrar un aviso de app no verificada: permite el uso personal con menos de 100 usuarios sin completar la verificación, según [su documentación](https://support.google.com/cloud/answer/13464323?hl=es). La autorización y la primera exportación real necesitan comprobarse con esa cuenta.
+
+Los pasos siguientes son para recrear la configuración en otra instancia:
+
 Necesita una configuración inicial del propietario de la app; no usa Firebase ni un backend:
 
 1. Crea o utiliza un proyecto en [Google Cloud Console](https://console.cloud.google.com/).
