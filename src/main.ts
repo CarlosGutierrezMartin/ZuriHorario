@@ -58,7 +58,7 @@ function render(){
   ${store.storageIssue?`<div class="notice error">${esc(store.storageIssue)}</div>`:''}
   ${updateAvailable?`<div class="notice">Hay una nueva versión disponible. Guarda lo que estés editando.<button data-action="update" class="text-button">Actualizar</button></div>`:''}
   ${view==='home'?home():view==='calendar'?calendar():settings()}
-  <footer class="page-footer"><span>Hecho con cariño, para que cuides tu tiempo.</span>${ic('heart')}<span>ZuriHorario</span></footer></main></div>
+  <footer class="page-footer"><span>Hecho con cariño, para que cuides tu tiempo.</span>${ic('heart')}<span>ZuriHorario · <a href="./privacy.html">Privacidad</a></span></footer></main></div>
   <nav class="bottom-nav" aria-label="Navegación móvil">${(['home','calendar','settings'] as const).map((v,i)=>`<button data-view="${v}" class="${view===v?'active':''}" ${view===v?'aria-current="page"':''}>${ic(['house','calendar-days','settings-2'][i])}<span>${labels[v]}</span></button>`).join('')}</nav>`;
   paintIcons();bind();dirty=false;
 }
