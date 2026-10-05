@@ -2,6 +2,10 @@
 
 Una PWA para iPhone y ordenador: registra horas reales, planifica turnos por semana y expórtalos a Google Calendar. Rosa suave, mensajes de ánimo y un recordatorio de que su novio la quiere mucho.
 
+**Abrir la app:** [ZuriHorario](https://carlosgutierrezmartin.github.io/ZuriHorario/).
+
+GitHub Pages está activado y el identificador público de Google se configura mediante la variable de repositorio `VITE_GOOGLE_CLIENT_ID`. Para publicar cambios, ejecuta el workflow manual **Publish static PWA to GitHub Pages** en Actions.
+
 ## Funciones
 
 - **Inicio**: entrada y salida, pausas, jornadas partidas, turnos nocturnos, notas y resumen mensual. Las pausas se descuentan. Los turnos de noche se atribuyen al día de entrada.
